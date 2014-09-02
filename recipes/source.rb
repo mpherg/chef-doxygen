@@ -1,4 +1,10 @@
 include_recipe 'build-essential'
+include_recipe 'yum'
+
+# --- Remove existing doxygen package ---
+package 'doxygen' do
+  action :remove
+end
 
 remote_file "#{Chef::Config['file_cache_path']}/doxygen-#{node['doxygen']['version']}.tar.gz" do
   source    node['doxygen']['url']
