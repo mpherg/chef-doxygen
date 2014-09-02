@@ -1,0 +1,8 @@
+name             'doxygen'
+maintainer       'The Authors'
+maintainer_email 'you@example.com'
+license          'all_rights'
+description      'Installs/Configures doxygen'
+long_description 'Installs/Configures doxygen'
+version          '0.1.0'
+recipe           'doxygen::source', 'Installs doxygen from source'
